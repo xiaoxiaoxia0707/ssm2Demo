@@ -50,12 +50,12 @@ public class StudentController {
     public JSONResult addStudent(HttpServletRequest request) {
         JSONResult result;
         String StudentName = request.getParameter("StudentName");
-        String StudentAddress = request.getParameter("StudentAddress");
-        String StudentSex = request.getParameter("StudentSex");
+        String StudentCollege = request.getParameter("StudentCollege");
+        String StudentSpecialty= request.getParameter("StudentSpecialty");
         Student student = new Student();
         student.setName(StudentName);
-        student.setAddress(StudentAddress);
-        student.setSex(StudentSex);
+        student.setCollege(StudentCollege);
+        student.setSpecialty(StudentSpecialty);
         if (studentService.addStudent(student)) {
             result = new JSONResult(student);
             result.setMessage("success");
@@ -94,13 +94,13 @@ public class StudentController {
         JSONResult result;
         Integer id = Integer.parseInt(request.getParameter("StudentId"));
         String StudentName = request.getParameter("StudentName");
-        String StudentAddress = request.getParameter("StudentAddress");
-        String StudentSex = request.getParameter("StudentSex");
+        String StudentCollege = request.getParameter("StudentCollege");
+        String StudentSpecialty= request.getParameter("StudentSpecialty");
         Student student = new Student();
         student.setId(id);
         student.setName(StudentName);
-        student.setAddress(StudentAddress);
-        student.setSex(StudentSex);
+        student.setCollege(StudentCollege);
+        student.setSpecialty(StudentSpecialty);
         if (studentService.updateStudent(student)) {
             result = new JSONResult(student);
             result.setMessage("success");

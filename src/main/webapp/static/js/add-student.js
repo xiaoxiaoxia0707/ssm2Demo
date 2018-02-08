@@ -14,12 +14,12 @@ function addStudent(){
         url: "rest/student/add",
         data: {
             StudentName: $("#name").val(),
-            StudentAddress: $("#address").val(),
-            StudentSex: $("#sex").val()
+            StudentCollege: $("#address").val(),
+            StudentSpecialty: $("#sex").val()
         },
         success: function(data) {
           window.location.href="rest/student/student";  //跳转到列表页面
         }
 
-    }); 
+    });
 }

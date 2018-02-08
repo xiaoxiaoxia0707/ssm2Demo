@@ -9,14 +9,14 @@ function queryStudent() {
             if (studentList.lenght == 0) {
                 $("#show_list").html("暂时查不到您要的数据！");
             } else {
-                var studentListHtml = "<tr><th><input id='checked-all' type='checkbox'><label>全选</label></th><th>姓&nbsp;&nbsp;名</th><th>地&nbsp;&nbsp;址</th><th>性&nbsp;&nbsp;别</th><th>操&nbsp;&nbsp;作</th></tr>";
+                var studentListHtml = "<tr><th><input id='checked-all' type='checkbox'><label>全选</label></th><th>姓&nbsp;&nbsp;名</th><th>学&nbsp;&nbsp;院</th><th>专&nbsp;&nbsp;业</th><th>操&nbsp;&nbsp;作</th></tr>";
                 $.each(studentList, function (i, n) {
                     i += 1;
                     studentListHtml = studentListHtml + "<tr><td class='list-id'><input type='checkbox'><label>"
                         + i + "</label></td><td>"
                         + n.name + "</td><td>"
-                        + n.address + "</td><td>"
-                        + n.sex + "</td><td class='user-edit'><a  class='editBtn' data-id='"
+                        + n.college + "</td><td>"
+                        + n.specialty + "</td><td class='user-edit'><a  class='editBtn' data-id='"
                         + n.id + "'>编辑</a><a class='deleteBtn'  data-id='"
                         + n.id + "'>删除</a></td></tr>";
                 });

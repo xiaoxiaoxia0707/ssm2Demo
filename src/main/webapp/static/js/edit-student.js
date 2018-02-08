@@ -23,8 +23,8 @@
         var student = data.data;
         $("#id").val(student.id);
         $("#name").val(student.name);
-        $("#address").val(student.address);
-        $("#sex").val(student.sex);
+        $("#address").val(student.college);
+        $("#sex").val(student.specialty);
         //给提交按钮绑定事件
         $("#submitBtn").click(function() {
           updateStudent();
@@ -42,8 +42,8 @@
             _method: 'PUT',
           StudentId: $("#id").val(),
           StudentName: $("#name").val(),
-          StudentAddress: $("#address").val(),
-          StudentSex: $("#sex").val()
+            StudentCollege: $("#address").val(),
+            StudentSpecialty: $("#sex").val()
         },
         success: function(data) {
 

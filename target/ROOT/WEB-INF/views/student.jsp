@@ -21,19 +21,7 @@ s<%@ page contentType="text/html;charset=UTF-8" language="java" %>
     <div></div>
   </div>
   <div class="content">
-    <div class="nav">
-      <ul>
-        <li>
-          平台概况
-        </li>
-        <li>
-          内容管理
-        </li>
-        <li>
-          用户管理
-        </li>
-      </ul>
-    </div>
+
     <div class="main">
       <div class="main-head">
         <h3>用户管理</h3>

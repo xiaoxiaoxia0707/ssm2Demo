@@ -5,9 +5,9 @@ public class Student {
 
     private String name;
 
-    private String address;
+    private String college;
 
-    private String sex;
+    private String specialty;
 
     public Integer getId() {
         return id;
@@ -25,19 +25,21 @@ public class Student {
         this.name = name == null ? null : name.trim();
     }
 
-    public String getAddress() {
-        return address;
+    public String getCollege() {
+        return college;
     }
 
-    public void setAddress(String address) {
-        this.address = address == null ? null : address.trim();
+    public void setCollege(String college) {
+        this.college = college == null ? null : college.trim();
     }
 
-    public String getSex() {
-        return sex;
+    public String getSpecialty() {
+        return specialty;
     }
 
-    public void setSex(String sex) {
-        this.sex = sex == null ? null : sex.trim();
+    public void setSpecialty(String specialty) {
+        this.specialty = specialty== null ? null : specialty.trim();
     }
+
+
 }

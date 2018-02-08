@@ -33,19 +33,6 @@
         </div>
     </div>
     <div class="content">
-        <div class="nav">
-            <ul>
-                <li>
-                    平台概况
-                </li>
-                <li>
-                    内容管理
-                </li>
-                <li>
-                    用户管理
-                </li>
-            </ul>
-        </div>
         <div class="main">
             <div class="main-head">
                 <h3>
@@ -68,13 +55,13 @@
                     </div>
                     <div>
                         <label>
-                            地址：
+                            学院：
                             <input id="address" type="text" value=""/>
                         </label>
                     </div>
                     <div>
                         <label>
-                            性别：
+                            专业：
                             <input id="sex" type="text" value="">
                             </input>
                         </label>
