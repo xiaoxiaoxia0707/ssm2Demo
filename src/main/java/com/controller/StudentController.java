@@ -37,8 +37,6 @@ public class StudentController {
         ModelAndView modelAndView = new ModelAndView("student");
         return modelAndView;
     }
-
-
     /**
      * 添加学生
      *

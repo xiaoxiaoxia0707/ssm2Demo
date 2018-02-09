@@ -9,7 +9,6 @@ public interface StudentMapper {
 
     int insert(Student record);
 
-    int insertSelective(Student record);
     List<Student> selectAll();
 
 
@@ -17,5 +16,4 @@ public interface StudentMapper {
 
     int updateByPrimaryKeySelective(Student record);
 
-    int updateByPrimaryKey(Student record);
 }
